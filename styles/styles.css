@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* FUENTES DE LETRAS */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(207, 219, 213);
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(232, 237, 223);
+    border-bottom: solid 2px rgb(36, 36, 35);
+}
+
+.btn-outline-success{
+    color: rgb(245, 203, 92);
+    border: solid 1px rgb(245, 203, 92);
+}
+
+.btn-outline-success:hover{
+    color: rgb(36, 36, 35);
+    background-color: rgb(245, 203, 92);
+    border: solid 1px rgb(245, 203, 92);
+}
+
+header ul li a{
+    color: rgb(36, 36, 35);
+}
+
+header ul li a:hover {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+/* MAIN */
+ 
+.main-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 5%;
+    height: 100%;
+    width: 79%;
+}
+
+.grid-container a img {
+    border: solid rgb(51, 53, 51) 1px;
+}
+
+
+/* FOOTER */
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(36, 36, 35);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li {
+    margin: 0, 40px;
+    padding: 20px;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+
+/* IMAGENES */
+
+main a img {
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------PRODUCTOS------------------------- */
+
+/* MAIN */
+
+.grid-productos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   gap: 5%;
+   margin: 2% 0;
+   justify-items: center;
+}
+
+.btn-primary {
+    color: white;
+    border: solid 1px rgb(51, 53, 51);
+    background-color: rgb(245, 203, 92);
+}
+
+.btn-primary:hover {
+    border: solid 1px rgb(243, 208, 111);
+    background-color: rgb(243, 208, 111);
+}
+
+img.card-img-top {
+    height: 55%;
+}
+
+.dropdown {
+    display: none;
+}
+
+/* -----------------SERVICIO AL CLIENTE----------------- */
+
+.main-servicio-al-cliente {
+    display: block;
+    padding: 12px;
+}
+
+#links-servicio-al-cliente {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.contacto-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+.contacto-mail h4{
+    color: white;
+}
+
+.contacto-mail section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(36, 36, 35);
+    width: 25%;
+}
+
+.contacto-mail input {
+    width: 300px;
+}
+
+#email{
+    margin: 2%;
+}
+
+/* ----------------------CARRITO-------------------- */
+
+.main-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 0;
+    justify-content: space-evenly;
+}
+
+.main-carrito section {
+    background-color: rgb(51, 53, 51);
+    color: white;
+}
+
+.main-carrito a {
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------AYUDA----------------------- */
+
+.main-ayuda {
+    margin: 0 2% 2% 2%;
+
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr) ;
+    grid-template-areas: 
+    'titulo titulo'
+    'frecuentes input-preguntas'
+    'otras input-preguntas';
+}
+
+.main-ayuda h1 {
+    grid-area: titulo;
+    justify-self: center;
+    background-color: bisque;
+}
+
+.preguntas-frecuentes {
+    grid-area: frecuentes;
+    background-color: brown;
+}
+
+.preguntas-otras {
+    grid-area: otras;
+    background-color: brown;
+}
+
+.textarea-ayuda {
+    grid-area: input-preguntas;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.textarea-ayuda textarea {
+    height: 200px;
+    width: 400px;
+    border: solid black 2px;
+}
+
+.textarea-ayuda button {
+    width: 100px;
+}
+
+.footer-ayuda {
+    margin-top: 6%;
+}
+
+/* ----------------------------PERFIL---------------------------------- */
+
+/* MAIN */
+
+.main-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.inicio-de-sesion{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(51, 53, 51);
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.inicio-de-sesion div{
+    color: white;
+}
+
+.registrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(36, 36, 35);
+}
+
+#email {
+    width: 100%;
+}
+
+#contraseña {
+    width: 100%;
+}
+
+#input-submit{
+    color: rgb(245, 203, 92);
+    border: solid 1px rgb(245, 203, 92);
+    background-color: rgb(36, 36, 35);
+}
+
+#input-submit:hover{
+    color: white;
+    background-color: rgb(245, 203, 92);
+}
+/* ----------------------------MEDIA QUERTY 420PX--------------------------- */
+
+@media (max-width: 420px) {
+
+    /* HEADER */
+  header nav div a {
+    margin: 0; 
+  }
+
+    /* MAIN */
+
+ .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+ .grid-container a {
+    margin-bottom: 5%;
+    border: solid black 1px;
+ }    
+
+    /* FOOTER */
+  
+    footer section ul {
+        padding: 1rem;
+    }
+
+
+
+    /* -------------------------PRODUCTOS------------------------ */
+
+    /* MAIN */
+
+    .grid-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .grid-productos div {
+        margin-top: 3%;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dropdown-toggle {
+        color: rgb(245, 203, 92);
+        background-color: rgb(51, 53, 51);
+        border: solid 1px rgb(245, 203, 92);
+    }
+
+    .dropdown-toggle:hover{
+        color: white;
+        background-color: rgb(245, 203, 92);
+    }
+    
+}
