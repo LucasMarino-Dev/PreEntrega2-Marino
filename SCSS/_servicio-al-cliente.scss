@@ -1,0 +1,32 @@
+.main-servicio-al-cliente {
+    display: block;
+    padding: 12px;
+}
+
+#links-servicio-al-cliente {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.contacto-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2%;
+    h4{
+        color: white;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        background-color: map-get($paleta-colores, color-textos-bordes );
+        width: 25%;
+    }
+    input{
+        width: 300px;
+    }
+}

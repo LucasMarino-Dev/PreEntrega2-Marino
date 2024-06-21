@@ -1,0 +1,31 @@
+/* MAIN */
+ 
+.main-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% 0 5% 0;
+    h2{
+        display: flex;
+        margin-bottom: 2%;
+        width: 94%;
+        background-color: $color-decorativo;
+        border: solid $color-secundario 2px;
+        padding: 1%;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 5%;
+    height: 100%;
+    width: 79%;
+    a{
+        img{
+            border: solid $color-secundario 1px;
+        }
+    }
+}
+

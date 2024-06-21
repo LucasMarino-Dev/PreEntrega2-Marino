@@ -1,0 +1,14 @@
+.main-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 0;
+    justify-content: space-evenly;
+    section {
+        background-color: $color-secundario;
+        color: white;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+    }
+}

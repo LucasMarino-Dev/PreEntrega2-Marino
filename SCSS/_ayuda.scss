@@ -1,0 +1,60 @@
+.main-ayuda {
+    margin: 0 2% 2% 2%;
+
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr) ;
+    grid-template-areas: 
+    'titulo titulo'
+    'frecuentes input-preguntas'
+    'otras input-preguntas';
+    h1 {
+        grid-area: titulo;
+        justify-self: center;
+        background-color: bisque;
+    }
+}
+
+.titulo-ayuda-mobile {
+    display: none;
+}
+
+.preguntas-frecuentes {
+    grid-area: frecuentes;
+    background-color: brown;
+}
+
+.preguntas-otras {
+    grid-area: otras;
+    background-color: brown;
+}
+
+.textarea-ayuda {
+    grid-area: input-preguntas;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    textarea {
+        height: 200px;
+        width: 400px;
+        border: solid black 2px;
+    }
+    button {
+        width: 100px;
+        color: $color-decorativo;
+        background-color: $color-secundario;
+        border: solid 1px $color-decorativo;
+        &:hover {
+            color: white;
+            background-color: $color-decorativo;
+        }
+    }
+}
+
+.footer-ayuda {
+    margin-top: 6%;
+}

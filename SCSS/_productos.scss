@@ -1,0 +1,30 @@
+/* MAIN */
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5%;
+    margin: 2% 0;
+    justify-items: center;
+ }
+ 
+ .btn-primary {
+     color: white;
+     border: solid 1px $color-secundario;
+     background-color: $color-decorativo;
+ }
+ 
+ .btn-primary:hover {
+     border: solid 1px rgb(243, 208, 111);
+     background-color: rgb(243, 208, 111);
+ }
+ 
+ img.card-img-top {
+     height: 55%;
+ }
+ 
+ .dropdown {
+     display: none;
+ }
+ 

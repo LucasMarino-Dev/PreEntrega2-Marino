@@ -1,0 +1,34 @@
+/* HEADER */
+
+header {
+    background-color: rgb(232, 237, 223);
+    border-bottom: solid 2px map-get($paleta-colores , color-textos-bordes);
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    ul {
+        li{
+            a{
+                color: map-get($paleta-colores , color-textos-bordes);
+                &:hover{
+                    font-size: x-large;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.btn-outline-success{
+    color: $color-decorativo;
+    border: solid 1px $color-decorativo;
+}
+
+.btn-outline-success:hover{
+    color: map-get($paleta-colores , color-textos-bordes );
+    background-color: $color-decorativo;
+    border: solid 1px $color-decorativo;
+}
+

@@ -1,0 +1,48 @@
+/* MAIN */
+
+.main-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.inicio-de-sesion{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(51, 53, 51);
+    width: 35%;
+    margin-bottom: 2%;
+    div{
+        color: white;
+    }
+}
+
+.registrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px map-get($paleta-colores , color-textos-bordes);
+}
+
+#email {
+    width: 100%;
+}
+
+#contraseña {
+    width: 100%;
+}
+
+#input-submit{
+    color: $color-decorativo;
+    border: solid 1px $color-decorativo;
+    background-color: map-get($paleta-colores, color-textos-bordes);
+    margin-top: 2%;
+    &:hover{
+        color: white;
+        background-color: $color-decorativo;
+    }
+}
