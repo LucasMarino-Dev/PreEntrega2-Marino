@@ -5,7 +5,7 @@ header {
     border-bottom: solid 2px map-get($paleta-colores , color-textos-bordes);
     img {
         height: 100px;
-        width: 100px;
+        width: 88px;
     }
     ul {
         li{
@@ -19,6 +19,10 @@ header {
         }
     }
 
+}
+
+.navbar-brand {
+   margin: 0;
 }
 
 .btn-outline-success{

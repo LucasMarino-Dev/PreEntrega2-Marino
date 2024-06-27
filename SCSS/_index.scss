@@ -4,15 +4,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2% 0 5% 0;
-    h2{
-        display: flex;
+    margin: 0% 0 5% 0;
+    section{
+        position: relative;
+        width: 100%;
         margin-bottom: 2%;
-        width: 94%;
-        background-color: $color-decorativo;
-        border: solid $color-secundario 2px;
-        padding: 1%;
+        img{
+            width: 100%;
+        }
+        h2{
+            position: absolute;
+            top: 39%;
+            left: 3.2%;
+            width: 94%;
+            color: $color-decorativo;
+            padding: 1%;
+        }
     }
+
+}
+
+.animate__fadeIn{
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+
+.animate__fadeInLeft{
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+
+.animate__fadeInRight{
+ @extend .animate__fadeInLeft
+}
+
+.img-index-mobile{
+    display: none;
 }
 
 .grid-container {
