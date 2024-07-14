@@ -222,6 +222,7 @@ img.card-img-top {
 .preguntas-otras {
   grid-area: otras;
   background-color: brown;
+  margin-bottom: 3%;
 }
 
 .textarea-ayuda {
